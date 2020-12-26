@@ -4,7 +4,7 @@ module.exports = async (req, res) => {
     let url = req.query.url
 
     if (!url){
-      res.send("To get a print preview, append ?url=https://github....")
+      res.redirect("https://github.com/sampoder/printhub#-printhub")
     }
     else{
     let html = await fetch(url).then((r) => r.text())
