@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
     else{
     let html = await fetch(url).then((r) => r.text())
     .catch(() =>
-      res.status(500).send("Encountered error serving profile page")
+      res.status(500).send("Encountered error fetching page")
     );
 
     console.log(html)
