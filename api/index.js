@@ -6,6 +6,7 @@ module.exports = async (req, res) => {
     if (!url){
       res.send("To get a print preview, append ?url=https://github....")
     }
+    else{
     let html = await fetch(url).then((r) => r.text())
     .catch(() =>
       res.status(500).send("Encountered error serving profile page")
@@ -36,5 +37,5 @@ module.exports = async (req, res) => {
       document.body.innerHTML = document.querySelector('#readme').innerHTML</script></body>`
     );
 
-    res.send(html)
+    res.send(html)}
   }
