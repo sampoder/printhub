@@ -1,0 +1,11 @@
+{
+  "name": "printhub",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sampoder/printhub",
+  "author": "Sam Poder <39828164+sampoder@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
